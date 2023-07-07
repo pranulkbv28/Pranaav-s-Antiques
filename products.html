@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Pranaav's Antiques
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico">    
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #211209;
+        }
+
+        .topnav {
+                    overflow: hidden;
+                    background-color: #755335;
+                    position: fixed;
+                    width: 100%;
+        }
+
+        .topnav a {
+                        float: left;
+                        display: block;
+                        color: black;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+        }
+
+        .topnav a:hover {
+                            background-color: #ddd;
+                            color: black;
+        }
+
+        .topnav a.active {
+                            background-color: #211209;
+                            color: white;
+        }
+
+        .topnav .search-container {
+                                        float: right;
+        }
+
+        .topnav input[type=text] {
+                                    padding: 6px;
+                                    margin-top: 8px;
+                                    font-size: 17px;
+                                    border: none;
+        }
+
+        .topnav .search-container button {
+                                            float: right;
+                                            padding: 6px 10px;
+                                            margin-top: 8px;
+                                            margin-right: 16px;
+                                            background: #ddd;
+                                            font-size: 17px;
+                                            border: none;
+                                            cursor: pointer;
+        }
+
+        .top{
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .shop-name{
+            background-color: black;
+        }
+
+        .first-name{
+                        color: #BACDDB;
+                        display: inline-block;
+                        position: absolute;
+        }
+
+        .second-name{
+                        color: #BACDDB;
+                        width: 100px;
+                        margin-top: 10px;
+                        margin-left: 30px;
+                        display: inline-block;
+        }
+
+        .images{
+            margin-top: 200px;
+        }
+        
+        .prod_images{
+            margin-left: 200px;
+            margin-right: auto;
+        }
+
+        .products{
+            width: 100%;
+            height: 100%;
+        }
+
+        .jewellery{
+            margin-right: 90px;
+        }
+
+        .furniture{
+            margin-left: 150px;
+            margin-top: 60px;
+        }
+
+        .ceramics{
+            margin-left: 150px;
+        }
+
+        .topnav .search-container button:hover {
+                                                    background: #ccc;
+        }
+
+        .foot0{
+            height: 20px;
+        }
+
+        .foot1{
+            text-align: center;
+            color: peru;
+            background-color: black;
+            padding-top: 20px;
+        }
+
+        .links{
+            padding: 20px 0 20px;
+            position: relative;
+        }
+
+        .links a:link{
+                color: white;
+        }
+
+        .links a:visited{
+            color: white;
+        }
+
+        .links a:hover{
+            color: blue;
+        }
+
+        .table_foot{
+            text-align: center;
+            color: white;
+            margin: auto;
+            padding-bottom: 30px;
+        }
+
+        .TD2{
+            padding-left: 35px;
+            padding-right: 49px;
+        }
+
+        .foot2{
+            background-color: black;
+        }
+
+        .table_foot a:link{
+                color: white;
+        }
+
+        .table_foot a:visited{
+            color: white;
+        }
+
+        .heading{
+            margin-top: 100px;
+            color: white;
+        }
+
+        .list{
+            color: white;
+            font-size: xx-large;
+        }
+
+        .list a:link{
+            color: white;
+        }
+
+        .list a:visited{
+            color: white;
+        }
+
+        .list a:hover{
+            color: blue;
+        }
+
+        @media screen and (max-width: 600px) {
+                                                .topnav .search-container {
+                                                                                float: none;
+                                                                            }
+                                                .topnav a, .topnav input[type=text], .topnav .search-container button {
+                                                                                                                        float: none;
+                                                                                                                        display: block;
+                                                                                                                        text-align: left;
+                                                                                                                        width: 100%;
+                                                                                                                        margin: 0;
+                                                                                                                        padding: 14px;
+                                                                                                                    }
+                                                .topnav input[type=text] {
+                                                                            border: 1px solid #ccc;  
+                                                                        }
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <a href="index.html">
+        <div class="shop-name">
+            <div class="first-name">
+                Pranaav's
+            </div>
+            <div class="second-name">
+                Antiques
+            </div>
+        </div>
+    </a>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="Contact.html">Contact Us</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+<h1 class="heading">
+    Products Available
+</h1>
+<hr>
+<ul class="list">
+    <li>
+        <a href="Products/famous_design.html">Famous Designs⭐</a>
+    </li>
+    <li>
+        <a href="Products/jewellery.html">Jewellery</a>
+    </li>
+    <li>
+        <a href="Products/ceramics.html">Ceramics</a>
+    </li>
+    <li>
+        <a href="Products/crockery.html">Crockery</a>
+    </li>
+    <li>
+        <a href="Products/furniture.html">Furniture</a>
+    </li>
+</ul>
+<footer class="foot0"></footer>
+    <footer class="foot1">
+        Connect with us at
+        <div class="links">
+            <a id="footed linkedin" href="https://in.linkedin.com> pranaav-bv-a19b34215">LinkedIn</a>
+            <a id="footed instagram" href="https://www.instagram.com/spamw_hoooo/">Instagram</a>
+            <a id="footed website" href="https://pranulkbv28.github.io/CV/">Website</a>
+        </div>
+    </footer>
+    <footer class="foot2">
+        <table class="table_foot">
+            <tr >
+                <td class="TD1"><a href="products.html">Products</a></td>
+                <td class="TD2"><a href="Contact.html">Contact Us</a></td>
+                <td class="TD3"><a href="About.html">About Us</a></td> 
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
